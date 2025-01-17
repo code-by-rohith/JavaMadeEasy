@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package Sampleworkout;
+
 import java.util.Arrays;
 
 class Solution {

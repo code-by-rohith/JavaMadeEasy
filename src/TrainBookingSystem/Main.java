@@ -1,3 +1,5 @@
+package TrainBookingSystem;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -37,7 +39,7 @@ class Train {
         return false;
     }
     public void displayTrainDetails() {
-        System.out.printf("Train Number: %d | Train Name: %s | Available Seats: %d | Ticket Price: %.2f\n",
+        System.out.printf("TrainBookingSystem.Train Number: %d | TrainBookingSystem.Train Name: %s | Available Seats: %d | Ticket Price: %.2f\n",
                 trainNumber, trainName, availableSeats, ticketPrice);
     }
 }
@@ -68,15 +70,15 @@ class TicketBookingApp {
         return null;
     }
     public void bookTickets() {
-        System.out.print("Enter Train Number: ");
+        System.out.print("Enter TrainBookingSystem.Train Number: ");
         int trainNumber = scanner.nextInt();
         Train train = findTrainByNumber(trainNumber);
 
         if (train == null) {
-            System.out.println("Invalid Train Number! Please try again.");
+            System.out.println("Invalid TrainBookingSystem.Train Number! Please try again.");
             return;
         }
-        System.out.print("Enter Number of Seats to Book: ");
+        System.out.print("Enter Number of Seats to LibBookSystem.Book: ");
         int seats = scanner.nextInt();
 
         if (train.bookSeats(seats)) {
@@ -87,9 +89,9 @@ class TicketBookingApp {
     }
     public void startApp() {
         while (true) {
-            System.out.println("\n--- Train Ticket Booking System ---");
+            System.out.println("\n--- TrainBookingSystem.Train Ticket Booking System ---");
             System.out.println("1. View Available Trains");
-            System.out.println("2. Book Tickets");
+            System.out.println("2. LibBookSystem.Book Tickets");
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
 
@@ -103,7 +105,7 @@ class TicketBookingApp {
                     bookTickets();
                     break;
                 case 3:
-                    System.out.println("Thank you for using the Train Ticket Booking System. Goodbye!");
+                    System.out.println("Thank you for using the TrainBookingSystem.Train Ticket Booking System. Goodbye!");
                     return;
                 default:
                     System.out.println("Invalid choice! Please try again:");

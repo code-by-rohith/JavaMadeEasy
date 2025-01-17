@@ -1,3 +1,5 @@
+package LibBookSystem;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,7 +27,7 @@ class Bks {
     }
 
     public void show_books() {
-        System.out.printf("| Book Name : %-20s | Book Number : %-12d | Available : %-9d |\n", bookname, booknumber, available);
+        System.out.printf("| LibBookSystem.Book Name : %-20s | LibBookSystem.Book Number : %-12d | Available : %-9d |\n", bookname, booknumber, available);
     }
 }
 
@@ -34,12 +36,12 @@ class Samp {
     ArrayList<Bks> dss = new ArrayList<>();
 
     public Samp() {
-        dss.add(new Bks("Book A", 6464, 2));
-        dss.add(new Bks("Book B", 6889, 6));
-        dss.add(new Bks("Book C", 81, 16));
-        dss.add(new Bks("Book D", 1255, 5));
-        dss.add(new Bks("Book E", 648, 2));
-        dss.add(new Bks("Book F", 64, 0));
+        dss.add(new Bks("LibBookSystem.Book A", 6464, 2));
+        dss.add(new Bks("LibBookSystem.Book B", 6889, 6));
+        dss.add(new Bks("LibBookSystem.Book C", 81, 16));
+        dss.add(new Bks("LibBookSystem.Book D", 1255, 5));
+        dss.add(new Bks("LibBookSystem.Book E", 648, 2));
+        dss.add(new Bks("LibBookSystem.Book F", 64, 0));
     }
 
     public void get_books() {
@@ -60,7 +62,7 @@ class Samp {
                 found = true;
                 if (data.getAvailable() > 0) {
                     data.setAvailable(data.getAvailable() - 1);
-                    System.out.println("Book ordered successfully! Remaining available copies: " + data.getAvailable());
+                    System.out.println("LibBookSystem.Book ordered successfully! Remaining available copies: " + data.getAvailable());
                 } else {
                     System.out.println("Sorry, the book is not available.");
                 }
@@ -69,7 +71,7 @@ class Samp {
         }
 
         if (!found) {
-            System.out.println("Book not found in the library.");
+            System.out.println("LibBookSystem.Book not found in the library.");
         }
     }
 
