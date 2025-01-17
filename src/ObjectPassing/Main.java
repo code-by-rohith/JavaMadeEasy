@@ -5,15 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Garage garage = new Garage();
-        Scanner scanner = new Scanner(System.in);
 
-        while (true) {
-            System.out.println("Enter the name of the car to be parked : ");
-            String data = scanner.nextLine();
-            Car car = new Car(data);
-            garage.park(car);
+        Car car = new Car("tesla");
+        Car car1 = new Car("Bmw");
 
-        }
+        garage.park(car);
+        garage.park(car1);
     }
 
 
