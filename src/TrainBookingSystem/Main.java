@@ -43,7 +43,6 @@ class Train {
                 trainNumber, trainName, availableSeats, ticketPrice);
     }
 }
-
 class TicketBookingApp {
     private ArrayList<Train> trainList = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);

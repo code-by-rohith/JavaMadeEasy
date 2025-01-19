@@ -1,6 +1,5 @@
 package Static_Keywords;
 
-import jdk.jfr.Frequency;
 
 public class Main {
     public static void main(String[] args) {
