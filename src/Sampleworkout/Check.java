@@ -7,6 +7,18 @@ public class Check {
     public static void main(String[] args) {
         int a[] = {1, 9, 6, 6, 5, 656, 523, 269, 5, 653, 5, 65};
         int b[][] = {{1, 2}, {2, 3}};
+        int c = 180;
+        try{
+            if(c <= 19){
+                System.out.println("Eligible");
+            }
+            else {
+                throw (new Exception("None "));
+            }
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
         Arrays.sort(a);
         Set<Integer> set = new LinkedHashSet<>();
         ArrayList<Integer> ds = new ArrayList<>();
